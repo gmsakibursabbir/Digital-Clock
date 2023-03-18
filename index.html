@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/386ddf576b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Digital Clock</title>
+  </head>
+  <body>
+    <!-- mood toggle -->
+    <div class="mood">
+      <input type="checkbox" class="checkbox" id="checkbox" />
+      <label for="checkbox" class="checkbox-label">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <span class="ball"></span>
+      </label>
+    </div>
+    <!-- clock -->
+    <div class="container">
+      <span id="hours">00</span>
+      <span> : </span>
+      <span id="minutes">00</span>
+      <span> : </span>
+      <span id="seconds">00</span>
+      <span id="session" class="smallify">AM</span>
+    </div>
+    <!-- full screen toggle -->
+    <div>
+      <button
+        class="js-toggle-fullscreen-btn toggle-fullscreen-btn"
+        aria-label="Enter fullscreen mode"
+        hidden
+      >
+        <svg
+          class="toggle-fullscreen-svg"
+          width="28"
+          height="28"
+          viewBox="-2 -2 28 28"
+        >
+          <g class="icon-fullscreen-enter">
+            <path d="M 2 9 v -7 h 7" />
+            <path d="M 22 9 v -7 h -7" />
+            <path d="M 22 15 v 7 h -7" />
+            <path d="M 2 15 v 7 h 7" />
+          </g>
+
+          <g class="icon-fullscreen-leave">
+            <path d="M 24 17 h -7 v 7" />
+            <path d="M 0 17 h 7 v 7" />
+            <path d="M 0 7 h 7 v -7" />
+            <path d="M 24 7 h -7 v -7" />
+          </g>
+        </svg>
+      </button>
+    </div>
+    <!-- js link -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
