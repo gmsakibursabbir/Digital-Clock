@@ -21,6 +21,13 @@ function displayTime() {
     hrs = hrs - 12;
   }
 
+  if (hrs < 10) {
+    hrs = "0" + hrs;
+  }
+  if (sec < 10) {
+    sec = "0" + sec;
+  }
+
   document.getElementById("hours").innerHTML = hrs;
   document.getElementById("minutes").innerHTML = min;
   document.getElementById("seconds").innerHTML = sec;
